@@ -1,0 +1,16 @@
+{
+  "supported": {
+    "Purr": true,
+    "kyoko": false,
+    "Hmtai": true,
+    "n-sfw api": true,
+    "NekoBot": true,
+    "nekos.moe": true,
+    "Nekos api": true,
+    "nekos.best": true,
+    "waifu.pics": true,
+    "waifu.it": false,
+    "waifu.im": true,
+    "pic.re": true
+  }
+}

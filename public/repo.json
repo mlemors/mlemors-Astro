@@ -1,0 +1,168 @@
+{
+    "name": "mlemors's repo",
+    "identifier": "mlemors",
+    "subtitle": "A full repo with all my apps",
+    "description": "This repo contains all the app that I have created and made public.\n\nYou can find the source code of each app on my Github Account: https://github.com/mlemors1",
+    "website": "https://github.com/mlemors1",
+    "iconURL": "https://avatars.githubusercontent.com/u/100066266?s=400&u=ad62b77c19d91e41c071ab5f3158056db558a998&v=4",
+    "tintColor": "#d0c83e",
+    "apps": [
+        {
+            "name": "Sora",
+            "bundleIdentifier": "me.mlemors.Sora",
+            "developerName": "mlemors",
+            "subtitle": "A modular iOS app to stream contents (AKA Sulfur)",
+            "localizedDescription": "A modular iOS app to stream contents (AKA Sulfur)",
+            "beta": false,
+            "version": "1.0.0",
+            "versionDate": "2025-07-01T00:30:00-04:00",
+            "versionDescription": "Version 1.0.0 comes with a brand new UI and many new features",
+            "downloadURL": "https://github.com/mlemors1/Sora/releases/download/1.0.0/Sulfur.ipa",
+            "iconURL": "https://raw.githubusercontent.com/mlemors1/Sora/refs/heads/dev/Sora/Assets.xcassets/AppIcon.appiconset/darkmode.png",
+            "tintColor": "#2ba2ba",
+            "category": "entertainment",
+            "versions": [
+                {
+                    "version": "1.0.0",
+                    "date": "2025-07-01T00:30:00-04:00",
+                    "localizedDescription": "Version 1.0.0 comes with a brand new UI and many new features",
+                    "downloadURL": "https://github.com/mlemors1/Sora/releases/download/1.0.0/Sulfur.ipa",
+                    "size": 2250000,
+                    "minOSVersion": "15.0"
+                },
+                {
+                    "version": "0.2.2",
+                    "date": "2025-05-07T00:30:00-04:00",
+                    "localizedDescription": "Version 0.2.2!!!, Many new features and bug fixes check Github for full changelog!",
+                    "downloadURL": "https://github.com/mlemors1/Sora/releases/download/0.2.2/Sulfur.ipa",
+                    "size": 1140000,
+                    "minOSVersion": "15.0"
+                },
+                {
+                    "version": "0.2.1",
+                    "date": "2025-03-28T00:30:00-04:00",
+                    "localizedDescription": "Many bug fixed and many new improvements to the app!",
+                    "downloadURL": "https://github.com/mlemors1/Sora/releases/download/0.2.1/Sora.ipa",
+                    "size": 9360000,
+                    "minOSVersion": "15.0"
+                },
+                {
+                    "version": "0.2.0",
+                    "date": "2025-02-16T00:30:00-04:00",
+                    "localizedDescription": "Complete rewrite of the app using the JScore framework",
+                    "downloadURL": "https://github.com/mlemors1/Sora/releases/download/0.2.0/Sora.ipa",
+                    "size": 839000,
+                    "minOSVersion": "15.0"
+                },
+                {
+                    "version": "0.1.0",
+                    "date": "2025-01-01T00:30:00-04:00",
+                    "localizedDescription": "First public beta for iOS/iPadOS. Check github for more infomations.",
+                    "downloadURL": "https://github.com/mlemors1/Sora/releases/download/0.1.0/Sora.ipa",
+                    "size": 1300000,
+                    "minOSVersion": "15.0"
+                }
+            ]
+        },
+        {
+            "name": "AnimeGen",
+            "bundleIdentifier": "me.mlemors.AnimeGen",
+            "developerName": "mlemors",
+            "subtitle": "A simple way to enjoy anime art",
+            "localizedDescription": "A simple way to enjoy anime art, generating images using public API.",
+            "version": "3.0.0",
+            "versionDate": "2025-03-04T00:30:00-04:00",
+            "versionDescription": "Complete rewrite of the app!",
+            "downloadURL": "https://github.com/mlemors1/AnimeGen/releases/download/v3.0.0/AnimeGen.ipa",
+            "iconURL": "https://raw.githubusercontent.com/mlemors1/AnimeGen/refs/heads/main/AnimeGen/Assets.xcassets/AppIcon.appiconset/1024.png",
+            "tintColor": "#473bcc",
+            "category": "entertainment",
+            "versions": [
+                {
+                    "version": "3.0.0",
+                    "date": "2025-03-04T00:30:00-04:00",
+                    "localizedDescription": "Complete rewrite of the app!",
+                    "downloadURL": "https://github.com/mlemors1/AnimeGen/releases/download/v3.0.0/AnimeGen.ipa",
+                    "size": 2890000,
+                    "minOSVersion": "13.0"
+                },
+                {
+                    "version": "2.0.0",
+                    "date": "2024-09-26T00:30:00-04:00",
+                    "localizedDescription": "Bug Fixes, this is the update brach from TestFlight",
+                    "downloadURL": "https://github.com/mlemors1/AnimeGen/releases/download/v2.0.1/AnimeGen.ipa",
+                    "size": 4590000,
+                    "minOSVersion": "13.0"
+                }
+            ],
+            "appPermissions": {
+                "privacy": {
+                    "NSPhotoLibraryAddUsageDescription": "Required to save Images"
+                }
+            }
+        },
+        {
+            "name": "Osmium",
+            "bundleIdentifier": "me.sobet.Osmium",
+            "developerName": "mlemors",
+            "subtitle": "A mobile client for the cobalt api",
+            "localizedDescription": "A mobile client for the cobalt API, supporting most files and custom instances",
+            "version": "0.6",
+            "versionDate": "2024-11-20T00:30:00-04:00",
+            "versionDescription": "Pretty good changes to the UI and good updates to the API support",
+            "downloadURL": "https://github.com/mlemors1/Osmium/releases/download/v0.6/Osmium.ipa",
+            "iconURL": "https://raw.githubusercontent.com/mlemors1/Osmium/refs/heads/main/Osmium/Osmium/Assets.xcassets/AppIcon.appiconset/180x180.png",
+            "tintColor": "#fd8108",
+            "category": "utilities",
+            "versions": [
+                {
+                    "version": "0.6",
+                    "date": "2024-11-20T00:30:00-04:00",
+                    "localizedDescription": "Pretty good changes to the UI and good updates to the API support",
+                    "downloadURL": "https://github.com/mlemors1/Osmium/releases/download/v0.6/Osmium.ipa",
+                    "size": 222000,
+                    "minOSVersion": "14.2"
+                },
+                {
+                    "version": "0.5",
+                    "date": "2024-10-20T00:30:00-04:00",
+                    "localizedDescription": "Update to the latest cobalt API update",
+                    "downloadURL": "https://github.com/mlemors1/Osmium/releases/download/v0.5/Osmium.ipa",
+                    "size": 208000,
+                    "minOSVersion": "14.2"
+                },
+                {
+                    "version": "0.4",
+                    "date": "2024-09-26T00:30:00-04:00",
+                    "localizedDescription": "Added support for image picker for Instagram/Twitter and updated to latest API version of Cobalt. Lot of general Fixes also like UI and sharing mechanism",
+                    "downloadURL": "https://github.com/mlemors1/Osmium/releases/download/v0.4/Osmium.ipa",
+                    "size": 198000,
+                    "minOSVersion": "14.2"
+                },
+                {
+                    "version": "0.3",
+                    "date": "2024-08-11T00:30:00-04:00",
+                    "localizedDescription": "You can now navigate files via the stock iOS Files app after download + option to share downloads when finished.",
+                    "downloadURL": "https://github.com/mlemors1/Osmium/releases/download/v0.3/Osmium.ipa",
+                    "size": 180000,
+                    "minOSVersion": "14.2"
+                },
+                {
+                    "version": "0.2",
+                    "date": "2024-06-07T00:30:00-04:00",
+                    "localizedDescription": "Support for all the formats and file have been finally added!",
+                    "downloadURL": "https://github.com/mlemors1/Osmium/releases/download/v0.2/Osmium.ipa",
+                    "size": 175000,
+                    "minOSVersion": "14.2"
+                }
+            ],
+            "appPermissions": {
+                "privacy": {
+                    "NSPhotoLibraryAddUsageDescription": "Required to save Images",
+                    "NSPhotoLibraryUsageDescription": "Required to store images on your device",
+                    "NSUserNotificationUsageDescription": "Required to send notifications on download"
+                }
+            }
+        }
+    ]
+}
