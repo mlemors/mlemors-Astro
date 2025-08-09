@@ -54,8 +54,8 @@ const projects = await Promise.all(
     .text-gradient {
         background: linear-gradient(
             90deg,
-            rgb(107, 96, 176),
-            rgb(0, 238, 255)
+            rgb(153, 137, 255),
+            rgb(137, 247, 255)
         );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -83,14 +83,13 @@ const projects = await Promise.all(
                             👋
                     </h1>
 
-                    <p class="text-gray-400">C#.Net developer</p>
+                    <p class="text-gray-400">A software developer from germany.</p>
                 </span>
             </div>
             <p class="text-gray-300">
-                I'm a C# .Net developer from germany. I love to create apps that make my life easier.
-                So far my favorite thing is to scrape informations from sites, mostly streaming sites. 
-                I am currently learning Swift to build iOS apps, TypeScript and React to build web apps and of course some python.
-                I recently started using AI Agents to automate some of my tasks. It is awesome!!!
+                I love to create apps that make my life easier. So far my favorite thing is to scrape informations from sites, mostly streaming sites. 
+                I am currently learning TypeScript and React to build web apps and of course some python.
+                I recently started using AI Agents to automate some of my tasks and it's awesome!!!
             </p>
         </header>
         <section>
@@ -99,6 +98,7 @@ const projects = await Promise.all(
                     Here you can find some projects im working on, all open source
                     available on GitHub.
                 </p>
+                <br/>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {
                         projects.map((project) => (
@@ -149,11 +149,13 @@ const projects = await Promise.all(
                             </a>
                         ))
                     }
-                </div>            
-                <p class="text-gray-300 text-xs mt-2 mr-2 ml-2 text-center">As a backend developer, this is all very new to me. please be kind.</p>
+                </div>
+                <br/><br/>
+                <p class="text-gray-300 text-xs mt-2 mr-2 ml-2 text-center">As a backend developer, I'm not that confident in creating frontend, but this works for me.</p>
         </section>
         <footer class="text-center text-gray-500 text-xs mt-2">
-            <p>This site is under the <a href="https://github.com/mlemors/mlemors-Astro/blob/master/LICENSE" target="_blank" class="text-gradient">GPLv3.0</a> License, made with ❤️ by mlemors</p>
+            <p>made with <a href="https://github.com/withastro/astro" target="_blank" class="text-gradient">Astro</a> and much ❤️ by mlemors</p>
+            <p>This site is under the <a href="https://github.com/mlemors/mlemors-Astro/blob/master/LICENSE" target="_blank" class="text-gradient">GPLv3.0</a> License</p>
         </footer>
     </main>
 </Layout>
