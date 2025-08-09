@@ -161,3 +161,19 @@ const projects = await Promise.all(
     </main>
 </Layout>
 <Analytics/>
+
+<script>
+    if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer');
+            if (!footer) return;
+            const minHeight = 24; // px
+            const maxHeight = 48; // px
+            const scrollY = window.scrollY;
+            // Shrink footer height as you scroll down, min 24px, max 48px
+            const newHeight = Math.max(minHeight, maxHeight - scrollY / 10);
+            footer.style.height = newHeight + 'px';
+            footer.style.transition = 'height 0.2s';
+        });
+    }
+</script>
