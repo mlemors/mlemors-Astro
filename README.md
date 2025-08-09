@@ -1,7 +1,7 @@
 # mlemors-Astro
 > hosted on mlemors.dev
  
-This is a simple portfolio website made using Astro and Tailwind CSS, with a minimalist full black/grayscale desig
+This is a simple portfolio website made using Astro and Tailwind CSS, with a minimalist full black/grayscale design
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mlemors/mlemors-Astro)
 
