@@ -13,7 +13,7 @@ This is a simple portfolio website made using Astro and Tailwind CSS, with a min
 
 ## License
 ```
-Copyright © 2024-2025 mlemors. All rights reserved.
+Copyright © 2025 mlemors. All rights reserved.
 
 mlemors-Astro is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
