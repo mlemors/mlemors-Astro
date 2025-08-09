@@ -7,7 +7,8 @@ This is a simple portfolio website made using Astro and Tailwind CSS, with a min
 
 ## Preview
 
-<img src="https://raw.githubusercontent.com/mlemors/mlemors.xyz-Astro/refs/heads/master/preview.png">
+<img width="1026" height="912" alt="preview" src="https://github.com/user-attachments/assets/59b6fe43-6987-4e1b-a866-9f95e36e3624" />
+
 
 
 ## License
