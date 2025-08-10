@@ -72,6 +72,10 @@ const processRepositories = (repos: any[]) => {
 // Fetch all repositories and process them
 const allRepos = await fetchAllUserRepos(GITHUB_USERNAME);
 const projects = processRepositories(allRepos);
+
+// Split projects into initial and additional
+const initialProjects = projects.slice(0, 8);
+const additionalProjects = projects.slice(8);
 ---
 
 <style>
@@ -128,9 +132,80 @@ const projects = processRepositories(allRepos);
                 <div class="flex justify-end mb-1">
                     <span class="text-xs text-gray-500">ordered by Last updated</span>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="projects-grid">
                     {
-                        projects.map((project) => (
+                        initialProjects.map((project) => (
+                            <a
+                                href={project.html_url}
+                                target="_blank"
+                                class="project-card block p-4 border border-gray-800 rounded-lg hover:border-gray-700 transition-colors"
+                            >
+                                <div>
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <img
+                                            src={project.owner.avatar_url}
+                                            alt={project.owner.login}
+                                            class="w-5 h-5 rounded-full"
+                                        />
+                                        <span class="text-sm text-gray-400">
+                                            {project.owner.login}
+                                        </span>
+                                    </div>
+                                    <h3 class="font-semibold mb-1 flex items-center gap-2">
+                                        {project.name}
+                                        {project.fork && (
+                                            <span class="text-xs px-2 py-0.5 bg-gray-800 text-gray-300 rounded-full border border-gray-700">
+                                                Fork
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <p class="text-sm text-gray-400 mb-3 line-clamp-2">
+                                        {project.description}
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-4 text-sm text-gray-400">
+                                    <div class="flex items-center gap-1">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="w-4 h-4"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                        </svg>
+                                        <span>{project.stargazers_count}</span>
+                                    </div>
+                                    {project.language && (
+                                        <div class="flex items-center gap-1">
+                                            <span class="w-2 h-2 rounded-full bg-gray-400" />
+                                            <span>{project.language}</span>
+                                        </div>
+                                    )}
+                                </div>
+                            </a>
+                        ))
+                    }
+                </div>
+                
+                {additionalProjects.length > 0 && (
+                    <div class="text-center mt-4">
+                        <button 
+                            id="show-more-btn"
+                            class="text-sm text-gray-400 hover:text-gray-300 transition-colors cursor-pointer border border-gray-800 hover:border-gray-700 px-4 py-2 rounded-lg"
+                        >
+                            Show more ({additionalProjects.length})
+                        </button>
+                    </div>
+                )}
+
+                <!-- Hidden additional projects -->
+                <div id="additional-projects" class="hidden">
+                    {
+                        additionalProjects.map((project) => (
                             <a
                                 href={project.html_url}
                                 target="_blank"
@@ -199,16 +274,24 @@ const projects = processRepositories(allRepos);
 
 <script>
     if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', function () {
-            const footer = document.querySelector('footer');
-            if (!footer) return;
-            const minHeight = 24; // px
-            const maxHeight = 48; // px
-            const scrollY = window.scrollY;
-            // Shrink footer height as you scroll down, min 24px, max 48px
-            const newHeight = Math.max(minHeight, maxHeight - scrollY / 10);
-            footer.style.height = newHeight + 'px';
-            footer.style.transition = 'height 0.2s';
-        });
+        // Handle show more button
+        const showMoreBtn = document.getElementById('show-more-btn');
+        const additionalProjects = document.getElementById('additional-projects');
+        const projectsGrid = document.getElementById('projects-grid');
+
+        if (showMoreBtn && additionalProjects && projectsGrid) {
+            showMoreBtn.addEventListener('click', function() {
+                // Move additional projects to the grid
+                const additionalCards = additionalProjects.children;
+                const cardsArray = Array.from(additionalCards);
+                
+                cardsArray.forEach(card => {
+                    projectsGrid.appendChild(card);
+                });
+                
+                // Hide the show more button
+                showMoreBtn.style.display = 'none';
+            });
+        }
     }
 </script>
