@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Analytics from '@vercel/analytics/astro'
 
 const GITHUB_USERNAME = "mlemors";
 
@@ -118,16 +117,14 @@ const additionalProjects = projects.slice(8);
                 </span>
             </div>
             <p class="text-gray-300">
-                I love to create apps that make my life easier. So far my favorite thing is to scrape informations from sites, mostly streaming sites. 
-                I am currently learning TypeScript and React to build web apps and of course some python.
-                I recently started using AI Agents to automate some of my tasks and it's awesome!!!
+                I enjoy building apps that make my life easier. So far my favorite thing is to scrape informations from websites and automate stuff. 
+                At work, I mainly use C# .NET, but I'm currently learning TypeScript and React to create web applications, along with some Python.
             </p>
         </header>
         <section>
                 <h2 class="text-2xl font-bold">Projects</h2>
                 <p class="text-gray-300 mb-2">
-                    Here are all my GitHub repositories, automatically fetched and sorted by popularity and recency.
-                    All projects are open source and available on GitHub.
+                    Here you can find some projects im working on, all open source available on GitHub.
                 </p>
                 <div class="flex justify-end mb-1">
                     <span class="text-xs text-gray-500">ordered by Last updated</span>
@@ -270,7 +267,6 @@ const additionalProjects = projects.slice(8);
         </footer>
     </main>
 </Layout>
-<Analytics/>
 
 <script>
     if (typeof window !== 'undefined') {
