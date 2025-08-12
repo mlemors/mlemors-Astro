@@ -6,6 +6,24 @@
 		<meta name="description" content="Halo I'm mlemors" />
 		<meta name="theme-color" content="#000000" />
 		<title>mlemors</title>
+		<style>
+			/* Enable pull-to-refresh on mobile devices */
+			html, body {
+				overscroll-behavior-y: auto;
+				touch-action: pan-y;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			/* Ensure proper height for scrolling */
+			html {
+				height: 100%;
+			}
+			
+			body {
+				min-height: 100vh;
+				position: relative;
+			}
+		</style>
 	</head>
 	<body class="bg-black text-white">
 		<slot />

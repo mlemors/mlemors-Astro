@@ -11,6 +11,9 @@ const additionalProjects: any[] = [];
 <style>
     body {
         font-family: 'Funnel Sans', sans-serif;
+        /* Ensure pull-to-refresh works on mobile */
+        overscroll-behavior-y: auto;
+        touch-action: pan-y;
     }
     .text-gradient {
         background: linear-gradient(
